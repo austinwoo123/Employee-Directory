@@ -1,6 +1,9 @@
 import React from "react";
 
+
 const SearchBar = ({ onChange, placeholder }) => {
+    const [data, setData] = useState(employees);
+
     return (
         <div className="Search">
             <span className="SearchSpan">
@@ -15,3 +18,5 @@ const SearchBar = ({ onChange, placeholder }) => {
         </div>
     );
 };
+
+export default SearchBar;
