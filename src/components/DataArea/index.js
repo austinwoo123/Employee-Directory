@@ -27,10 +27,40 @@ export default class DataArea extends Component {
             });
     }
 
+    sortDob = (event) => {
+        const dob = event.target.value;
+        if (dob === "old") {
+            this.setState({
+                employees: this.state.employees.sort(function (x, y) {
+                    var date1 = new Date(x.dob).getTime();
+                    var date2 = new Date(y.dob).getTime();
+                    return date1 > date2 ? 1 : -1;
+                }),
+            });
+        } else if (dob === "young") {
+            this.setState({
+                employees: this.state.employees.sort(function (x, y) {
+                    var date1 = new Date(x.dob).getTime();
+                    var date2 = new Date(y.dob).getTime();
+                    return date1 < date2 ? 1 : -1;
+                }),
+            });
+        }
+    };
+
     render() {
         return (
             <div>
+                <div>
+                    <label htmlFor="dob">Sort by birthday:</label>
+                    <select onChange={this.sortDob}>
+                        <option value="current">Current</option>
+                        <option value="old">Old to Young</option>
+                        <option value="young">Young to Old</option>
+                    </select>
+                </div>
                 <table className="table table-striped">
+
 
                     <tr>
                         <th>Picture</th>
