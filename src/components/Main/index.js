@@ -3,10 +3,20 @@ import "./style.css";
 import DataArea from "../DataArea"
 import Search from "../Search/index"
 
+function handleOnChange(arr, query) {
+    return arr.filter(function (name) {
+        return name.toLowerCase().indexOf(query.toLowerCase()) !== -1
+    })
+}
+
 function Main() {
+
+
+
     return (
         <div className="main">
-            <Search onChange={handleOnChange} placeholder='this is a placeholder' />
+
+            <Search onChange={handleOnChange} placeholder='Enter a name' />
             <DataArea />
 
         </div>

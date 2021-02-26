@@ -2,7 +2,7 @@ import React from "react";
 
 
 const SearchBar = ({ onChange, placeholder }) => {
-    const [data, setData] = useState(employees);
+
 
     return (
         <div className="Search">
