@@ -14,7 +14,7 @@
 This project involved creating an employee directory app using React. This project required the organization of components and managing compnent states, while responding to user events. 
 -----------------------
 ## Deployed Link
-[Link to Deployed Site]()
+[Link to Deployed Site](https://austinwoo123.github.io/Employee-Directory)
 
 ## How to Start
 1. Copy the repo from GitLab using your ssh key
