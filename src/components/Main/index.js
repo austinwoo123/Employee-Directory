@@ -1,8 +1,8 @@
-import React from "react";
+
 import "./style.css";
 import DataArea from "../DataArea"
 import Search from "../Search/index"
-
+import React, { useState } from 'react';
 
 
 
@@ -16,9 +16,11 @@ import Search from "../Search/index"
 
 function Main() {
 
-    const handleOnChange = (event) => {
-        const employee = event.target.value;
 
+    // Declare a new state variable, which we'll call "count"
+    const handleOnChange = () => {
+
+        //     const [count, setCount] = useState("");
 
     }
 
