@@ -60,8 +60,6 @@ export default class DataArea extends Component {
                     </select>
                 </div>
                 <table className="table table-striped">
-
-
                     <tr>
                         <th>Picture</th>
                         <th>Name</th>
@@ -69,9 +67,9 @@ export default class DataArea extends Component {
                         <th>Email</th>
                         <th>Phone</th>
                     </tr>
-
                     <tbody>
                         {this.state.employees.map(function (props) {
+                            console.log(props.name)
                             return (
                                 <tr key={props.id}>
                                     <td>
