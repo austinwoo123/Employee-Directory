@@ -78,7 +78,7 @@ export default class DataArea extends Component {
                             return (
                                 <tr key={props.id}>
                                     <td>
-                                        <img alt="pic" src={props.pic}></img>
+                                        <img src={process.env.PUBLIC_URL + props.pic} />;
                                     </td>
                                     <td>{props.name}</td>
                                     <td>{props.dob}</td>
